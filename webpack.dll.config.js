@@ -1,5 +1,5 @@
 'use strict';
-const frontpack = require('frontpack');
+const frontpack = require('@frontpack/frontpack');
 
 const fp = new frontpack();
 const config = fp
