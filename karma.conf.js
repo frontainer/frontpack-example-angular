@@ -21,7 +21,7 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     files: [
-      { pattern: './src/polyfills.ts', watched: false },
+     './src/polyfills.ts',
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
@@ -46,6 +46,6 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: true
   });
 };
