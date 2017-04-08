@@ -10,7 +10,7 @@ const config = fp
   ])
   .config({
     entry: {
-      vendor: ['./src/vendor']
+      vendor: ['./src/polyfills.ts']
     }
   }).option({
     typescript: {

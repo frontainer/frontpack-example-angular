@@ -1,15 +1,14 @@
-import { MysamplePage } from './app.po';
+import { MyappPage } from './app.po';
 
-describe('mysample App', function() {
-  let page: MysamplePage;
+describe('myapp App', () => {
+  let page: MyappPage;
 
   beforeEach(() => {
-    page = new MysamplePage();
+    page = new MyappPage();
   });
 
   it('should display message saying app works', () => {
-    console.log(page);
-    // page.navigateTo();
-    // expect(page.getParagraphText()).toEqual('app works!');
+    page.navigateTo();
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });

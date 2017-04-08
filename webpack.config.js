@@ -16,17 +16,18 @@ const config = fp
   ])
   .config({
     entry: {
-      main: process.env.NODE_ENV === 'production' ? [
-          './src/main-aot',
-          './src/assets/css/style.scss'
-        ] : [
-          './src/main',
-          './src/assets/css/style.scss'
-        ]
+      main: [
+        './src/polyfills.ts',
+        './src/main.ts',
+        './src/styles.scss'
+      ]
     }
   }).option({
     server: {
-      historyApiFallback: true
+      historyApiFallback: true,
+      browserSync: {
+        port: 4200
+      }
     },
     copy: [],
     options: {}
