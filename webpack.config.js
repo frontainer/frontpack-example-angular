@@ -29,7 +29,7 @@ const config = fp
         port: 4200
       }
     },
-    copy: [],
+    copy: {},
     options: {}
   }).export();
 module.exports = config;
