@@ -116,9 +116,9 @@
   dependencies:
     tsickle "^0.21.0"
 
-"@frontpack/frontpack-preset-angular@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-angular/-/frontpack-preset-angular-1.0.1.tgz#5437c8661401b52c31b9d2bbde756ba13fd2d23b"
+"@frontpack/frontpack-preset-angular@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-angular/-/frontpack-preset-angular-2.0.0.tgz#56dcd19c265167cd746c2cd8403a0732a1d0a9b2"
   dependencies:
     "@ngtools/webpack" "^1.3.0"
     angular-router-loader "^0.6.0"
@@ -127,26 +127,26 @@
     tslint-loader "^3.5.1"
     typescript "^2.2.2"
 
-"@frontpack/frontpack-preset-common@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-common/-/frontpack-preset-common-1.0.1.tgz#65018b0e238aadd240b1376623600c0d4ffc3e6f"
+"@frontpack/frontpack-preset-common@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-common/-/frontpack-preset-common-2.0.0.tgz#036e6e01cd691433d8b13af14af0f4be22732c17"
   dependencies:
     clean-webpack-plugin "^0.1.16"
     progress-bar-webpack-plugin "^1.9.3"
 
-"@frontpack/frontpack-preset-copy@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-copy/-/frontpack-preset-copy-1.0.1.tgz#fd8ad7a30a6062834564797523f8a6c298dde8ec"
+"@frontpack/frontpack-preset-copy@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-copy/-/frontpack-preset-copy-2.0.0.tgz#138fbb86c7df5e0ddd721a2e02c873cfbe5d0d73"
   dependencies:
     copy-webpack-plugin "^4.0.1"
 
-"@frontpack/frontpack-preset-dll@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-dll/-/frontpack-preset-dll-1.0.1.tgz#d41dc466e0cfd00a837c4fd35eb5c54dfa9e5217"
+"@frontpack/frontpack-preset-dll@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-dll/-/frontpack-preset-dll-2.0.0.tgz#4ef7bbd9556abca560892959152b872ad8a7121e"
 
-"@frontpack/frontpack-preset-html@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-html/-/frontpack-preset-html-1.0.1.tgz#66fba42aacb25f262dd2ca6772f2020732e7d3df"
+"@frontpack/frontpack-preset-html@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-html/-/frontpack-preset-html-2.0.0.tgz#6927cebbb798fd1d7f5fa266c4344b1524d7897b"
   dependencies:
     ejs "^2.5.6"
     ejs-compiled-loader "2.2.0"
@@ -154,17 +154,17 @@
     html-webpack-plugin "^2.28.0"
     preload-webpack-plugin "^1.2.2"
 
-"@frontpack/frontpack-preset-server@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-server/-/frontpack-preset-server-1.0.1.tgz#66ce17cc979e17bb4f2242874d81a225c759df7d"
+"@frontpack/frontpack-preset-server@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-server/-/frontpack-preset-server-2.0.0.tgz#b231c9f3d0df2fc00c8ff9130ae19092255c92c5"
   dependencies:
     browser-sync "^2.18.8"
     browser-sync-webpack-plugin "^1.1.4"
     connect-history-api-fallback "^1.3.0"
 
-"@frontpack/frontpack-preset-style@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-style/-/frontpack-preset-style-1.0.1.tgz#e40a9c51420042ce0e62b047c3feeca2e2abf0e8"
+"@frontpack/frontpack-preset-style@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack-preset-style/-/frontpack-preset-style-2.0.0.tgz#8f597ffdb5554791dea99c0ffd30a400749d34fe"
   dependencies:
     autoprefixer "^6.7.7"
     css-loader "^0.28.0"
@@ -179,9 +179,9 @@
     stylelint "^7.10.1"
     stylelint-webpack-plugin "0.7.0"
 
-"@frontpack/frontpack@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@frontpack/frontpack/-/frontpack-1.0.1.tgz#b3ad770bcd485d44c167518c297fb90c0846e745"
+"@frontpack/frontpack@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@frontpack/frontpack/-/frontpack-2.0.0.tgz#5cce6800b9f3d3a651a763ce18b16a5cb1b4407b"
   dependencies:
     chalk "1.1.3"
     webpack-loader-options-merge "0.0.3"
