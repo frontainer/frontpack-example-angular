@@ -1,10 +1,10 @@
-import { MyappPage } from './app.po';
+import { ExamplePage } from './app.po';
 
-describe('myapp App', () => {
-  let page: MyappPage;
+describe('example App', () => {
+  let page: ExamplePage;
 
   beforeEach(() => {
-    page = new MyappPage();
+    page = new ExamplePage();
   });
 
   it('should display message saying app works', () => {

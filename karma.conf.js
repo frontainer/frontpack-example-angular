@@ -1,16 +1,13 @@
 // Karma configuration file, see link for more information
 // https://karma-runner.github.io/0.13/config/configuration-file.html
-const webpackConfig = Object.assign({},require('./webpack.config'));
-delete webpackConfig.output;
-webpackConfig.plugins = webpackConfig.plugins.filter((plugin) => {
-  return (plugin.constructor.name !== 'BrowserSyncPlugin')
-});
 
 module.exports = function (config) {
+  const webpackConfig = require('./webpack.spec.config');
   config.set({
     basePath: '',
     frameworks: ['jasmine'],
     plugins: [
+      require('karma-webpack'),
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
@@ -21,19 +18,22 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     files: [
-     './src/polyfills.ts',
+      'src/polyfills.ts',
       { pattern: './src/test.ts', watched: false }
     ],
     preprocessors: {
-      '**/*.ts': ['webpack']
+      './src/*.ts': ['webpack']
     },
-    webpack: webpackConfig,
     mime: {
       'text/x-typescript': ['ts','tsx']
     },
     coverageIstanbulReporter: {
       reports: [ 'html', 'lcovonly' ],
       fixWebpackSourcePaths: true
+    },
+    webpack: webpackConfig,
+    webpackMiddleware: {
+      stats: 'errors-only'
     },
     angularCli: {
       environment: 'dev'
@@ -46,6 +46,6 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: true
+    singleRun: false
   });
 };

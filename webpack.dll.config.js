@@ -10,11 +10,17 @@ const config = fp
   ])
   .config({
     entry: {
-      vendor: ['./src/polyfills.ts']
+      vendor: ['polyfills.ts']
     }
   }).option({
-    typescript: {
-      lint: false
+    angular: {
+      lint: false,
+      ts: {
+        configFileName: './src/tsconfig.app.json'
+      }
     },
-  }).export();
-module.exports = config;
+  });
+
+module.exports = function(env) {
+  return config.export(env);
+};

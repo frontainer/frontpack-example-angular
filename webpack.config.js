@@ -17,9 +17,9 @@ const config = fp
   .config({
     entry: {
       main: [
-        './src/polyfills.ts',
-        './src/main.ts',
-        './src/styles.scss'
+        'polyfills.ts',
+        'main.ts',
+        'styles.scss'
       ]
     }
   }).option({
@@ -29,7 +29,15 @@ const config = fp
         port: 4200
       }
     },
+    angular: {
+      ts: {
+        configFileName: './src/tsconfig.app.json'
+      }
+    },
     copy: {},
     options: {}
-  }).export();
-module.exports = config;
+  });
+
+module.exports = function(env) {
+  return config.export(env);
+};
